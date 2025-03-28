@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Simplawyer Text Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Простой одностраничный текстовый редактор, созданный с использованием React, имитирующий функциональность текстового редактора Simplawyer One.
 
-## Available Scripts
+## Функциональность
 
-In the project directory, you can run:
+- **Загрузка HTML файлов**: Загрузка и отображение HTML файлов с тегами <p> и <span>.
+- **Полужирный текст**: Выделение текста и применение жирного начертания.
+- **Удаление текста**: 
+  - Выделение текста и нажатие кнопки "Удалить выделенное" для его зачеркивания (красным цветом).
+  - Текст остаётся видимым до тех пор, пока вы не нажмёте в другом месте редактора.
+- **Плавная анимация удаления**: После клика вне редактора удалённый текст анимированно исчезает, перемещаясь в модуль удалённых текстов и уменьшаясь в размере.
+- **Модуль удалённых текстов**: 
+  - Скрыт по умолчанию и расширяется в ширину при наведении.
+  - Показывает список всех удалённых текстов.
 
-### `npm start`
+## Как начать работу
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Клонировать репозиторий:**
+```bash
+git clone https://github.com/your-username/text-editor.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Перейти в папку проекта:**
+```bash
+cd text-editor
+```
 
-### `npm test`
+3. **Установить зависимости:**
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Запустить приложение:**
+```bash
+npm start
+```
 
-### `npm run build`
+## Как использовать
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-[] Загрузить файл: Нажмите на кнопку "Загрузить HTML файл", чтобы загрузить HTML файл с тегами <p> и <span> (например, test.html).
+-[] Сделать текст жирным: Выделите текст и нажмите на кнопку "Сделать полужирным".
+-[] Удалить текст:
+    1. Выделите текст и нажмите на кнопку "Удалить выделенное".
+    2. Текст будет зачёркнут и останется на месте.
+    3. Нажмите в любое другое место, чтобы запустить анимацию удаления и перемещения текста в модуль.
+-[] Просмотр удалённых текстов: Наведите курсор на модуль, чтобы расширить его и увидеть удалённые тексты.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Используемые технологии
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**
+- **CSS**
+- **HTML5**
