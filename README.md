@@ -18,7 +18,7 @@
 
 1. **Клонировать репозиторий:**
 ```bash
-git clone https://github.com/your-username/text-editor.git
+git clone https://github.com/DenisStobert/text-editor.git
 ```
 
 2. **Перейти в папку проекта:**
